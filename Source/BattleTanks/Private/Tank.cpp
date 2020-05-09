@@ -24,6 +24,11 @@ void ATank::SetTurretReference(UTankTurret* TurretToSet)
 	TankAimingComponent->SetTurretReference(TurretToSet);
 }
 
+void ATank::Fire()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Fire Works"));
+}
+
 // Called when the game starts or when spawned
 void ATank::BeginPlay()
 {
